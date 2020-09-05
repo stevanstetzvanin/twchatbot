@@ -7,7 +7,8 @@ const opts = {
     password: 'w2disxaso56gin0qzkdpl6hrei3t8k'
   },
   channels: [
-	'gaules'
+	'gaules',
+	'stev4n'
   ]
 };
 // Create a client with our options
