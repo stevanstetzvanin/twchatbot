@@ -3,12 +3,13 @@ const tmi = require('tmi.js');
 // Define configuration options
 const opts = {
   identity: {
-    username: 'stevan_stetz',
-    password: 'w2disxaso56gin0qzkdpl6hrei3t8k'
+    username: 'stev4n',
+    password: '7elv8vl7adjfh9bgdjposdcuc6b02a'
   },
   channels: [
-	'gaules',
-	'stev4n'
+	'freljhordan',
+	'missleblanc',
+	'kiwionline'  
   ]
 };
 // Create a client with our options
