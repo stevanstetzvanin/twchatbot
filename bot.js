@@ -9,7 +9,9 @@ const opts = {
   channels: [
 	'freljhordan',
 	'missleblanc',
-	'kiwionline'  
+	'kiwionline',
+	'plutinho',
+	'patsferrer'
   ]
 };
 // Create a client with our options
