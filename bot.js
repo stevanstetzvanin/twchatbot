@@ -36,7 +36,7 @@ function onMessageHandler (target, context, msg, self) {
     client.say(target, `vim pela dinha`);
     console.log(`* Executed ${commandName} command`);
   }
-  else if (commandName == 'OMEGALUL') {
+  else if (commandName === 'OMEGALUL') {
     client.say(target, `OMEGALUL`);
     console.log(`* Executed ${commandName} command`);
   }
