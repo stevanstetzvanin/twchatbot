@@ -32,12 +32,16 @@ function onMessageHandler (target, context, msg, self) {
   const commandName = msg.trim();
 
   // If the command is known, let's execute it
- if (commandName === '@stev4n') {
-    client.say(target, `vim pela dinha`);
+ if (commandName === '@stev4n' || commandName === '@stev4n oi') {
+    client.say(target, `@${context.username} vim pela dinha`);
     console.log(`* Executed ${commandName} command`);
   }
   else if (commandName === 'OMEGALUL') {
     client.say(target, `OMEGALUL`);
+    console.log(`* Executed ${commandName} command`);
+  }
+  else if (commandName === 'KEKW') {
+    client.say(target, `KEKW`);
     console.log(`* Executed ${commandName} command`);
   }
   else if (commandName === 'eu tu nos') {
