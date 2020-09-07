@@ -1,4 +1,4 @@
-# twbot
+# Twitch ChatBot
 
 USING DOCKER
 
