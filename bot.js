@@ -34,21 +34,21 @@ function onMessageHandler (target, context, msg, self) {
   // If the command is known, let's execute it
  if (commandName === '@stev4n' || commandName === '@stev4n oi') {
     client.say(target, `@${context.username} vim pela dinha`);
-    console.log(`* Executed ${commandName} command`);
+    console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
   else if (commandName === 'OMEGALUL') {
     client.say(target, `OMEGALUL`);
-    console.log(`* Executed ${commandName} command`);
+    console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
   else if (commandName === 'KEKW') {
     client.say(target, `KEKW`);
-    console.log(`* Executed ${commandName} command`);
+    console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
   else if (commandName === 'eu tu nos') {
     client.say(target, `sub nelas`);
-    console.log(`* Executed ${commandName} command`);
+    console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   } else {
-    console.log(`* Unknown command ${commandName}`);
+    console.log(`* ${target} - ${context["display-name"]}: ${commandName}`);
   }
 }
 // Function called when the "dice" command is issued
