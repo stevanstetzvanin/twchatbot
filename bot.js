@@ -30,7 +30,7 @@ function onMessageHandler (target, context, msg, self) {
   if (self) { return; } // Ignore messages from the bot
 
   // Remove whitespace from chat message
-  const commandName = msg.trim().toLowerCase();
+  const commandName = msg.trim();
 
   // If the command is known, let's execute it
  if (commandName.toLowerCase().includes('@stev4n') && commandName.toLowerCase().includes('bot')) {
