@@ -11,7 +11,8 @@ const opts = {
 	'missleblanc',
 	'kiwionline',
 	'plutinho',
-	'patsferrer'
+	'patsferrer',
+	'stev4n'
   ]
 };
 // Create a client with our options
@@ -29,11 +30,15 @@ function onMessageHandler (target, context, msg, self) {
   if (self) { return; } // Ignore messages from the bot
 
   // Remove whitespace from chat message
-  const commandName = msg.trim();
+  const commandName = msg.trim().toLowerCase();
 
   // If the command is known, let's execute it
- if (commandName === '@stev4n' || commandName === '@stev4n oi') {
-    client.say(target, `@${context.username} vim pela dinha`);
+ if (commandName.toLowerCase().includes('@stev4n') && commandName.toLowerCase().includes('bot')) {
+    client.say(target, `@${context.username} bot é vc LUL`);
+    console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
+  }
+  else if (commandName.toLowerCase().includes('@stev4n')) {
+    client.say(target, `@${context.username} vim pela dinha, a melhor streamer Kappa`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
   else if (commandName === 'OMEGALUL') {
@@ -44,7 +49,7 @@ function onMessageHandler (target, context, msg, self) {
     client.say(target, `KEKW`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
-  else if (commandName === 'eu tu nos') {
+  else if (commandName.toLowerCase().includes('eu tu nos')) {
     client.say(target, `sub nelas`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   } else {
