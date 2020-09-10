@@ -34,11 +34,11 @@ function onMessageHandler (target, context, msg, self) {
 
   // If the command is known, let's execute it
  if (commandName.toLowerCase().includes('@stev4n') && commandName.toLowerCase().includes('bot')) {
-    client.say(target, `@${context.username} bot é vc LUL`);
+    client.say(target, `@${context["display-name"]} bot é vc LUL`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
   else if (commandName.toLowerCase().includes('@stev4n')) {
-    client.say(target, `@${context.username} vim pela dinha, a melhor streamer Kappa`);
+    client.say(target, `@${context["display-name"]} vim pela dinha, a melhor streamer Kappa`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
   else if (commandName === 'OMEGALUL') {
