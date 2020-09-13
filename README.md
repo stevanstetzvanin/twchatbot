@@ -2,7 +2,7 @@
 
 USING DOCKER
 
-git clone https://github.com/stevanstetzvanin/twbot.git
+git clone https://github.com/stevanstetzvanin/twchatbot.git
 
 cd twchatbot
 
