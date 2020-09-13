@@ -37,12 +37,8 @@ function onMessageHandler (target, context, msg, self) {
     client.say(target, `@${context["display-name"]} bot é vc LUL`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
-  else if (commandName.toLowerCase().includes('@stev4n') && commandName.includes('oi')) {
+  else if (commandName.toLowerCase().includes('@stev4n') && commandName.toLowerCase().includes(' oi')) {
     client.say(target, `@${context["display-name"]} vim pela dinha, a melhor streamer Kappa`);
-    console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
-  }
-  else if (commandName === 'OMEGALUL') {
-    client.say(target, `OMEGALUL`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
   else if (commandName === 'KEKW') {
