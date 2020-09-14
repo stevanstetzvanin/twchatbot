@@ -45,7 +45,7 @@ function onMessageHandler (target, context, msg, self) {
     client.say(target, `KEKW`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
-  else if (commandName.toLowerCase().includes('eu tu nos')) {
+  else if (commandName.toLowerCase() === 'eu tu nos') {
     client.say(target, `sub nelas`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   } else {
