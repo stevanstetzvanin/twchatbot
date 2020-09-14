@@ -42,7 +42,7 @@ async function onMessageHandler (target, context, msg, self) {
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
   else if (commandName === '!sraffle' && target === '#kiwionline') {
-    await sleep(15000);
+    await sleep(20000);
     client.say(target, `!quero`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
