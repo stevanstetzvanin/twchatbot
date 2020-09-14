@@ -41,6 +41,10 @@ function onMessageHandler (target, context, msg, self) {
     client.say(target, `@${context["display-name"]} vim pela dinha, a melhor streamer Kappa`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
+  else if (commandName === '!sraffle') {
+    client.say(target, `!quero`);
+    console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
+  }
   else if (commandName === 'KEKW') {
     client.say(target, `KEKW`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
