@@ -42,6 +42,7 @@ function onMessageHandler (target, context, msg, self) {
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
   else if (commandName === '!sraffle') {
+    await sleep(5000);
     client.say(target, `!quero`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
@@ -60,6 +61,9 @@ function onMessageHandler (target, context, msg, self) {
 function rollDice () {
   const sides = 6;
   return Math.floor(Math.random() * sides) + 1;
+}
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 // Called every time the bot connects to Twitch chat
 function onConnectedHandler (addr, port) {
