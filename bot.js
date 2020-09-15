@@ -41,8 +41,8 @@ async function onMessageHandler (target, context, msg, self) {
     client.say(target, `@${context["display-name"]} vim pela dinha, a melhor streamer Kappa`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
-  else if (commandName === '!sraffle' && target === '#kiwionline') {
-    await sleep(20000);
+  else if (commandName.includes('O sorteio termina em 30 segundos') && commandName.includes('manda !quero pra participar') && target === '#kiwionline' && context.username === 'tutopom') {
+    await sleep(5000);
     client.say(target, `!quero`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
