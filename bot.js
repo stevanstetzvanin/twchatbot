@@ -51,7 +51,7 @@ async function onMessageHandler (target, context, msg, self) {
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   }
   else if (commandName.toLowerCase() === 'eu tu nos') {
-    client.say(target, `sub nelas`);
+    client.say(target, `pela dinha`);
     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
   } else {
     console.log(`* ${target} - ${context["display-name"]}: ${commandName}`);
