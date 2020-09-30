@@ -33,29 +33,29 @@ async function onMessageHandler (target, context, msg, self) {
   const commandName = msg.trim();
   console.log(`* ${target} - ${context["display-name"]}: ${commandName}`);
   // If the command is known, let's execute it
- if (commandName.toLowerCase().includes('@stev4n') && commandName.toLowerCase().includes('bot')) {
-    client.say(target, `@${context["display-name"]} bot é vc LUL`);
-    console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
-  }
-  else if (commandName.toLowerCase().includes('@stev4n') && commandName.toLowerCase().includes(' oi') && target === '#kiwionline') {
-    client.say(target, `@${context["display-name"]} vim pela dinha, a melhor streamer Kappa`);
-    console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
-  }
+//  if (commandName.toLowerCase().includes('@stev4n') && commandName.toLowerCase().includes('bot')) {
+//     client.say(target, `@${context["display-name"]} bot é vc LUL`);
+//     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
+//   }
+//   else if (commandName.toLowerCase().includes('@stev4n') && commandName.toLowerCase().includes(' oi') && target === '#kiwionline') {
+//     client.say(target, `@${context["display-name"]} vim pela dinha, a melhor streamer Kappa`);
+//     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
+//   }
 //   else if (commandName.includes('O sorteio termina em 30 segundos') && commandName.includes('manda !quero pra participar') && target === '#kiwionline' && context.username === 'tutopom') {
 //     await sleep(5000);
 //     client.say(target, `!quero`);
 //     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
 //   }
-  else if (commandName === 'KEKW') {
-    client.say(target, `KEKW`);
-    console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
-  }
-  else if (commandName.toLowerCase() === 'eu tu nos') {
-    client.say(target, `pela dinha`);
-    console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
-  } else {
-    console.log(`* ${target} - ${context["display-name"]}: ${commandName}`);
-  }
+//   else if (commandName === 'KEKW') {
+//     client.say(target, `KEKW`);
+//     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
+//   }
+//   else if (commandName.toLowerCase() === 'eu tu nos') {
+//     client.say(target, `pela dinha`);
+//     console.log(`* --> Executed in ${target}: ${commandName} command from @${context["display-name"]}`);
+//   } else {
+//     console.log(`* ${target} - ${context["display-name"]}: ${commandName}`);
+//   }
 }
 // Function called when the "dice" command is issued
 function rollDice () {
