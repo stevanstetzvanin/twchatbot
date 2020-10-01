@@ -32,7 +32,7 @@ async function onMessageHandler (target, context, msg, self) {
 
   // Remove whitespace from chat message
   const commandName = msg.trim();
-  console.log(`* ${target} - ${context["display-name"]}: ${commandName}`);
+//   console.log(`* ${target} - ${context["display-name"]}: ${commandName}`);
   // If the command is known, let's execute it
  if (commandName.toLowerCase().includes('@stev4n') && commandName.toLowerCase().includes('bot')) {
     client.say(target, `@${context["display-name"]} bot é vc LUL`);
