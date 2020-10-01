@@ -3,17 +3,12 @@ const tmi = require('tmi.js');
 // Define configuration options
 const opts = {
   identity: {
-    username: 'stev4n',
-    password: '7elv8vl7adjfh9bgdjposdcuc6b02a'
+    username: 'TWITCH-USERNAME',
+    password: 'TOKEN'
   },
   channels: [
-	'freljhordan',
-	'missleblanc',
-	'kiwionline',
-	'plutinho',
-	'patsferrer',
-	'stev4n',
-	'rauffa_agust'
+	'CHANNEL1',
+	'CHANNEL2'
   ]
 };
 // Create a client with our options
